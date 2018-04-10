@@ -1,0 +1,82 @@
+.example-icon{
+  padding: 0 14px;
+}
+
+.example-spacer{
+  flex: 1 1 auto;
+}
+
+.mat-raised-button{
+  font-family: Noto Sans CJK JP DemiLight;
+  font-size: 15px;
+  font-style: unset;
+  background-color: cadetblue;
+  height: 10px ;
+  width: 350px;
+}
+
+.mat-button{
+  float: right;
+}
+
+.mat-tab-nav-bar{
+  margin-right:25px;
+  width:100%;
+}
+
+.cenetForm {
+  right: 20%;
+  top: 70%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+}
+
+.userPhoto{
+  height: 200px;
+  width: 200px;
+}
+.mat-card{
+  float: bottom;
+}
+.icon {
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  background: url("icon.png") no-repeat scroll 0 0 transparent;
+}
+#btnsubmit{
+  alignment: center;
+  font-style: inherit;
+  font-size: 15px;
+  font-family: "Noto Sans CJK JP DemiLight";
+  height: 30px ;
+  width: 200px;
+}
+
+#title{
+  font-size: 25px;
+  font-style: inherit;
+  font-family: "Noto Sans CJK JP DemiLight";
+}
+
+#btnSearch{
+  right: -15%;
+  margin-bottom: 10%;
+  font-style: inherit;
+  font-size: 15px;
+  font-family: "Noto Sans CJK JP DemiLight";
+  alignment: center;
+  height: 30px ;
+  width: 200px;
+}
+
+#btnCancel{
+  alignment: center;
+  font-style: inherit;
+  font-size: 15px;
+  font-family: "Noto Sans CJK JP DemiLight";
+  background-color: red;
+  height: 30px;
+  width: 200px;
+}
