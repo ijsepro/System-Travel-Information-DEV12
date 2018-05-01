@@ -1,0 +1,29 @@
+.mat-tab-nav-bar{
+  margin-right:25px;
+  width:100%;
+}
+
+.cenetForm {
+  left: 70%;
+  top: 70%;
+  margin-left: -25%;
+  position: absolute;
+  margin-top: -25%;
+}
+
+.userPhoto{
+  height: 200px;
+  width: 200px;
+}
+.mat-card{
+  float: bottom;
+}
+
+#btnsubmit{
+  alignment: center;
+  height: 15px 0px;
+  width: 500px;
+  background: cornflowerblue;
+  right: 30%;
+}
+

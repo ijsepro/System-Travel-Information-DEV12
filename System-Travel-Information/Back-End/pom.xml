@@ -8,5 +8,13 @@
     <artifactId>tis</artifactId>
     <version>0.0.1</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.karaf.jpa</groupId>
+            <artifactId>hibernate</artifactId>
+            <version>4.2.0</version>
+        </dependency>
+    </dependencies>
+
     
 </project>

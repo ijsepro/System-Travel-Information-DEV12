@@ -1,6 +1,6 @@
 package lk.edu.ijse.tis.dto;
 
-public class Place {
+public class PlaceDTO {
     private int placeId;
     private String placeName;
     private String placeType;
@@ -9,11 +9,11 @@ public class Place {
     private String placeTown;
     private double ticketPrice;
 
-    public Place(){
+    public PlaceDTO(){
 
     }
 
-    public Place(int placeId, String placeName, String placeType, String description, String district, String placeTown, double ticketPrice) {
+    public PlaceDTO(int placeId, String placeName, String placeType, String description, String district, String placeTown, double ticketPrice) {
         this.placeId = placeId;
         this.placeName = placeName;
         this.placeType = placeType;
@@ -23,7 +23,7 @@ public class Place {
         this.ticketPrice = ticketPrice;
     }
 
-    public Place(String placeName, String placeType, String description, String district, String placeTown, double ticketPrice) {
+    public PlaceDTO(String placeName, String placeType, String description, String district, String placeTown, double ticketPrice) {
         this.placeName = placeName;
         this.placeType = placeType;
         this.description = description;

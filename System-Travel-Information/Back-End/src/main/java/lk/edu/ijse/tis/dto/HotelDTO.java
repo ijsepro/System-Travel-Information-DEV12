@@ -1,6 +1,6 @@
 package lk.edu.ijse.tis.dto;
 
-public class Hotel {
+public class HotelDTO {
 
     private int hotelId;
     private String hotelName;
@@ -9,11 +9,11 @@ public class Hotel {
     private String hotelDistrict;
     private String hotelTown;
 
-    public Hotel() {
+    public HotelDTO() {
 
     }
 
-    public Hotel(int hotelId, String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
+    public HotelDTO(int hotelId, String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
         this.setHotelId(hotelId);
         this.setHotelName(hotelName);
         this.setHotelType(hotelType);
@@ -22,7 +22,7 @@ public class Hotel {
         this.setHotelTown(hotelTown);
     }
 
-    public Hotel(String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
+    public HotelDTO(String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
         this.setHotelName(hotelName);
         this.setHotelType(hotelType);
         this.setHotelDescription(hotelDescription);
