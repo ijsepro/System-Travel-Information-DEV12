@@ -11,10 +11,11 @@
 }
 
 .mat-raised-button{
-  font-family: Noto Sans CJK JP DemiLight;
+  font-family: "Droid Sans Mono";
+  font-style: normal;
   font-size: 15px;
-  font-style: unset;
   background-color: lightblue;
+  color: black;
   height: 10px 0px;
   width: 350px;
 }

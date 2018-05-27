@@ -22,8 +22,30 @@
 #btnsubmit{
   alignment: center;
   height: 15px 0px;
-  width: 500px;
+  width: 150px;
+  font-family: "Droid Sans Mono";
+  font-style: normal;
   background: cornflowerblue;
   right: 30%;
+}
+
+#btnModify{
+  alignment: center;
+  height: 15px 0px;
+  font-family: "Droid Sans Mono";
+  font-style: normal;
+  width: 150px;
+  background: lightgreen;
+  right: 20%;
+}
+
+#btnRemove {
+  alignment: center;
+  font-family: "Droid Sans Mono";
+  font-style: normal;
+  height: 15px 0px;
+  width: 150px;
+  background: firebrick;
+  right: 10%;
 }
 

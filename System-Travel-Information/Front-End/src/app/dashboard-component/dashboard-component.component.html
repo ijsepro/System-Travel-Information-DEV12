@@ -1,3 +1,4 @@
+<body ng-app="MyApp">
 <title>dashboard</title>
 <mat-toolbar color="primary" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
   <mat-toolbar-row>
@@ -17,14 +18,16 @@
 <div>
   <mat-label align="center" id="lblSideBar">Admin Dashboard</mat-label>
   <mat-card-subtitle>
-    <div>
-      <button mat-raised-button="" id="btnManagePlace" routerLink="../src/app/new-place/new-place.component.html">Manage Places</button>
+    <div class="tab" ng-controller="TabControlController">
+      <button mat-raised-button="" id="btnManagePlace" routerLink="new-place">Manage Places</button>
+      <!--<button class="tablinks" onclick="openTab(event, 'Environments')" ng-click="../src/app/new-place/new-place.component.html">EManage Places</button>-->
+      <!--<li><a routerLink="new-place">Manage Places</a></li>-->
     </div>
     <br>
   </mat-card-subtitle>
   <mat-card-subtitle>
     <div>
-      <button mat-raised-button="">Manage Hotels</button>
+      <button mat-raised-button="" routerLink="new-hotel">Manage Hotels</button>
     </div>
     <br>
   </mat-card-subtitle>
@@ -81,6 +84,7 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="../../../js/ButtonController.js"></script>
 </div>
+</body>
 
 
 

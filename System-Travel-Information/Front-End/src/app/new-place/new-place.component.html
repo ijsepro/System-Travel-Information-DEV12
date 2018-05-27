@@ -1,36 +1,39 @@
 <title>App-newPlace</title>
-<h2 align="center" id="title">Manage Place Details</h2>
 <form class="cenetForm">
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place Name">
-    <br>
-  </mat-form-field>
+  <h2 id="title">Manage Place Details</h2>
+  <div class="form-group">
+    <label for="placeName">Place Name:</label>
+    <input [(ngModel)]="place.placeName" placeholder="Place Name" name="placeName" class="form-control" id="placeName">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place Type">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="placeType">Place Name:</label>
+    <input [(ngModel)]="place.placeType" placeholder="Place Type" name="placeType" class="form-control" id="placeType">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place Discription">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="placeDiscription">Place Discription:</label>
+    <input [(ngModel)]="place.placeDiscription" placeholder="Place Discription" name="placeDiscription" class="form-control" id="placeDiscription">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place District">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="placeDistrict">Place District:</label>
+    <input [(ngModel)]="place.placeDistrict" placeholder="Place District" name="placeDistrict" class="form-control" id="placeDistrict">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place Town">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="placeTown">Place Town:</label>
+    <input [(ngModel)]="place.placeTown" placeholder="Place Town" name="placeTown" class="form-control" id="placeTown">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Place Ticket Price">
-  </mat-form-field>
+  <div class="form-group">
+    <label for="ticketPrice">Ticket Price:</label>
+    <input [(ngModel)]="place.ticketPrice" placeholder="Ticket price" name="ticketPrice" class="form-control" id="ticketPrice">
+  </div>
   <br>
   <br>
-  <button id="btnsubmit" mat-raised-button="">Submit Details</button>
+  <button id="btnsubmit" mat-raised-button="" (click)="createPlace()">Submit</button>
+  <button id="btnModify" mat-raised-button="">Modify</button>
+  <button id="btnRemove" mat-raised-button="">Remove</button>
 </form>
 

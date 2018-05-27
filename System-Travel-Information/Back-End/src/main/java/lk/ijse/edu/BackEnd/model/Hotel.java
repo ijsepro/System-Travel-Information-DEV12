@@ -1,41 +1,31 @@
-package lk.edu.ijse.tis.dto;
+package lk.ijse.edu.BackEnd.model;
 
-public class HotelDTO {
+import javax.persistence.*;
 
-    private int hotelId;
+@Entity
+@Table(name = "hotel")
+public class Hotel {
+    @Id
+    @Column
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column
     private String hotelName;
+    @Column
     private String hotelType;
+    @Column
     private String hotelDescription;
+    @Column
     private String hotelDistrict;
+    @Column
     private String hotelTown;
 
-    public HotelDTO() {
-
+    public int getId() {
+        return id;
     }
 
-    public HotelDTO(int hotelId, String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
-        this.setHotelId(hotelId);
-        this.setHotelName(hotelName);
-        this.setHotelType(hotelType);
-        this.setHotelDescription(hotelDescription);
-        this.setHotelDistrict(hotelDistrict);
-        this.setHotelTown(hotelTown);
-    }
-
-    public HotelDTO(String hotelName, String hotelType, String hotelDescription, String hotelDistrict, String hotelTown) {
-        this.setHotelName(hotelName);
-        this.setHotelType(hotelType);
-        this.setHotelDescription(hotelDescription);
-        this.setHotelDistrict(hotelDistrict);
-        this.setHotelTown(hotelTown);
-    }
-
-    public int getHotelId() {
-        return hotelId;
-    }
-
-    public void setHotelId(int hotelId) {
-        this.hotelId = hotelId;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getHotelName() {

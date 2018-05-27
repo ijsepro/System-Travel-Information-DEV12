@@ -1,31 +1,32 @@
-<h2 align="center" id="title">Manage Hotel Details</h2>
 <form class="cenetForm">
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Hotel Name">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <h2 align="center" id="title">Manage Hotel Details</h2>
+    <label for="hotelName">Hotel Name:</label>
+    <input [(ngModel)]="hotel.hotelName" placeholder="Hotel Name" name="hotelName" class="form-control" id="hotelName">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Hotel Type">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="hotelType">Hotel Type:</label>
+    <input [(ngModel)]="hotel.hotelType" placeholder="Hotel Type" name="hotelType" class="form-control" id="hotelType">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Hotel Discription">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="hotelDiscription">Hotel Description:</label>
+    <input [(ngModel)]="hotel.hotelDiscription" placeholder="Hotel Description" name="hotelDiscription" class="form-control" id="hotelDiscription">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Hotel District">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="hotelDistrict">Hotel District:</label>
+    <input [(ngModel)]="hotel.hotelDistrict" placeholder="Hotel District" name="hotelDistrict" class="form-control" id="hotelDistrict">
+  </div>
   <br>
-  <mat-form-field>
-    <input matInput="answer" placeholder="Enter Hotel Town">
-    <br>
-  </mat-form-field>
+  <div class="form-group">
+    <label for="hotelTown">Hotel Town:</label>
+    <input [(ngModel)]="hotel.hotelTown" placeholder="Hotel Town" name="hotelTown" class="form-control" id="hotelTown">
+  </div>
   <br>
-  <button id="btnsubmit" mat-raised-button="">Submit Details</button>
+  <button id="btnsubmit" mat-raised-button="" (click)="createHotel()">Submit</button>
+  <button id="btnModify" mat-raised-button="">Modify</button>
+  <button id="btnRemove" mat-raised-button="">Remove</button>
 </form>
-
 
