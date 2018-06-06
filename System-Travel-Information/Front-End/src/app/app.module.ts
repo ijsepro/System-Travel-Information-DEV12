@@ -13,13 +13,25 @@ import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {PlaceService} from './new-place/place.service';
 import {HotelService} from './new-hotel/hotel.service';
-import {HomepageComponent} from './homepage/homepage.component';
+ import {HomepageComponent} from './homepage/homepage.component';
+// import { NewComponentComponent } from './new-component/new-component.component';
+import { LoginComponent } from './login/login.component';
+import { RegistationComponent } from './registation/registation.component';
+import {SignInComponent} from "./sign-in/sign-in.component";
+import {SignUpComponent} from "./sign-up/sign-up.component";
+
 
 const approutes: Routes = [
   { path: 'dashboard-component', component: DashboardComponentComponent },
   { path: 'new-place', component: NewPlaceComponent},
   { path: 'new-hotel', component: NewHotelComponent },
   { path: 'homepage', component: HomepageComponent },
+  { path: 'login', component: LoginComponent},
+  { path: 'registation', component: RegistationComponent},
+  { path: 'sign-up', component: SignUpComponent},
+  { path: 'sign-in', component: SignInComponent},
+  { path : '', redirectTo:'/sign-in', pathMatch : 'full'}
+
   ];
 
 @NgModule({
@@ -28,7 +40,12 @@ const approutes: Routes = [
     DashboardComponentComponent,
     NewHotelComponent,
     NewPlaceComponent,
-    HomepageComponent
+    HomepageComponent,
+    // NewComponentComponent,
+    LoginComponent,
+    SignInComponent,
+    SignUpComponent,
+    RegistationComponent,
   ],
   imports: [
     BrowserModule,

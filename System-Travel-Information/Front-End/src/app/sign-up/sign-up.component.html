@@ -1,0 +1,17 @@
+<div *ngIf="isLoginError" class="red-text center error-message">
+  <i class="material-icons">error</i> Incorrect username or password
+</div>
+<form class="signUpForm">
+  <div class="center">
+    <input [(ngModel)]="firstName.firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName" required>
+    <input [(ngModel)]="lastName.lastName" placeholder="Last Name" name="lastName" class="form-control" id="lastName" required>
+    <input  [(ngModel)]="email.email" placeholder="Email" name="email" class="form-control" id="email" required>
+    <input type="password" [(ngModel)]="password.password" placeholder="Password" name="password" class="form-control" id="password" required>
+    <input type="password" [(ngModel)]="cpassword.cpassword" placeholder="Confirm Password" name="cpassword" class="form-control" id="cpassword" required>
+    <div class="row">
+      <div class="input-field col s12">
+        <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+      </div>
+    </div>
+  </div>
+</form>

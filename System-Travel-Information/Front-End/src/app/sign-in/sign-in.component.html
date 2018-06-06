@@ -1,0 +1,16 @@
+<form class="signInForm">
+  <div class="center">
+    <div class="row">
+      <img class="login">
+      <input [(ngModel)]="userName.userName" placeholder="User Name" name="userName" class="form-control" id="userName">
+    </div>
+    <div class="row">
+      <img class="key">
+      <input type="password" [(ngModel)]="password.password" placeholder="Password" name="password" class="form-control" id="password">
+    </div>
+    <div class="row">
+        <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+    </div>
+  </div>
+
+</form>

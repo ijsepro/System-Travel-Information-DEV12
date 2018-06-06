@@ -33,3 +33,9 @@ div.error-message i{
 .tabs .tab a.active{
   background-color: #fff !important;
 }
+
+.center{
+  margin-left: 250px;
+  width: 400px;
+}
+

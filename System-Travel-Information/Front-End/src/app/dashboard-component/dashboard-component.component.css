@@ -3,6 +3,16 @@
   width:100%;
 }
 
+.mat-raised-button{
+  background-color: black;
+  color: white;
+}
+
+.main{
+  background-image: url("../images/solo-travel-photo-.jpg");
+  height: 900px;
+  width: 1500px;
+}
 .cenetForm {
   margin-top: 45%;
   left: 70%;
