@@ -1,16 +1,20 @@
-<form class="signInForm">
+<form [formGroup]="rForm" (ngSubmit)="validation(rForm.value)" (ngSubmit)="updateUser(rForm)">
   <div class="center">
     <div class="row">
+
       <img class="login">
-      <input [(ngModel)]="userName.userName" placeholder="User Name" name="userName" class="form-control" id="userName">
+      <input formControlName="username"  placeholder="User Name" name="username" class="form-control" id="username" ng-model="text" required>
+      <br>
+      <div style="color:red " class="alert" *ngIf="!rForm.controls['username'].valid && rForm.controls['username'].touched">Username must be 5 to 10 characters</div>
     </div>
     <div class="row">
       <img class="key">
       <input type="password" [(ngModel)]="password.password" placeholder="Password" name="password" class="form-control" id="password">
     </div>
+
     <div class="row">
         <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
     </div>
-  </div>
 
+  </div>
 </form>

@@ -1,0 +1,43 @@
+<div class="container">
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <div class="modal fade" id="myModal" role="dialog">
+    <!--<div class="modal-dialog">-->
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <div class="container">
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <div class="card grey lighten-2">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width tabs-transparent">
+                <li class="tab">
+                  <a routerLink='/sign-in' routerLinkActive='active'>Sign In</a>
+                </li>
+                <li class="tab">
+                  <a  routerLink='/sign-up' routerLinkActive='active'>Sign Up</a>
+                </li>
+              </ul>
+            </div>
+            <div class="card-content white">
+              <div class="row">
+                <router-outlet></router-outlet>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!--<h4 class="modal-title">Modal Header</h4>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+          <!--<p>Some text in the modal.</p>-->
+        <!--</div>-->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    <!--</div>-->
+  <!--</div>-->
+
+</div>
